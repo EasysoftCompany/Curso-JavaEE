@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.dev.data;
 
 import com.dev.data.NewServlet.Persona;
@@ -34,7 +29,6 @@ public class OtherServlet extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-            /* TODO output your page here. You may use following sample code. */
             Persona persona = (Persona) getServletContext().getAttribute("persona");
             if(persona == null)
             {
